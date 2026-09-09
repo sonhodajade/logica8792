@@ -9,6 +9,8 @@ int main(){
 
     printf("a multiplicação é:%d\n", (a * b));
 
+    printf("a subtração é:%d\n", (a - b));
+
 
 
     return 0;
