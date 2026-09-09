@@ -11,6 +11,8 @@ int main(){
 
     printf("a subtração é:%d\n", (a - b));
 
+    printf("a divisão é:%d\n", (a / b));
+
 
 
     return 0;
