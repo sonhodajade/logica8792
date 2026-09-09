@@ -7,6 +7,8 @@ int main(){
 
     printf("O maior número é:%d\n", (a + b));
 
+    printf("a multiplicação é:%d\n", (a * b));
+
 
 
     return 0;
