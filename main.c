@@ -5,17 +5,17 @@ int main(){
 
     Setlocale(LC_ALL, "pt_BR.UTF-8");
     
-    int a = 5;
-    int b = 4;
+    
+    int n;
 
-    printf("a soma é:%d\n", (a + b));
+printf("Digite um idade: ");
+scanf("%d", &idade); 
 
-    printf("a multiplicação é:%d\n", (a * b));
-
-    printf("a subtração é:%d\n", (a - b));
-
-    printf("a divisão é:%d\n", (a / b));
-
+if(idade >=18) {
+    printf("Você é maior de idade!");
+}else{
+    printf("você é menor de idade!");
+}
 
 
     return 0;
