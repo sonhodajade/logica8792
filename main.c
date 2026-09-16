@@ -13,7 +13,7 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
     printf("\nQual sua idade?");
     scanf("%d", &idade);
     printf("\nQual sua altura?");
-    scanf("%d", &altura);
+    scanf("%f", &altura);
 
     if((idade >= 18) && (altura >= 1.60)){
         printf("Você pode brincar na roleta!");
