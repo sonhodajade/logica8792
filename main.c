@@ -9,9 +9,9 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
     int diaDasemana;
 
     printf("Digite um número de 1 a 7");
-    scanf("%d", &dia);
+    scanf("%d", &diaDasemana);
 
-    switch(dia){
+    switch(diaDasemana){
     case 1:
     printf("Domingo!");
     break;
