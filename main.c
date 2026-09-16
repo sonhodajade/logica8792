@@ -22,5 +22,6 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
     }
 
      return 0;
+}
 
 
