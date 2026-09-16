@@ -13,9 +13,9 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
 
     if(diaDasemana == 1){
         printf("Domingo!");
-    }else if(diaDasemna == 2){
+    }else if(diaDasemana == 2){
         printf("Segunda-feira");
-    }else if(diaDasemna == 3){
+    }else if(diaDasemana == 3){
         printf("Terça-feira");
     }else{ if(diaDasemana == 4){
         printf("Quarta-feira");
