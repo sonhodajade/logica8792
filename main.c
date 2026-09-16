@@ -8,7 +8,7 @@ setlocale(LC_ALL, "pt_BR.UTF-8");
 
     int diaDasemana;
 
-    printf("Digite um número de 1 a 7
+    printf("Digite um número de 1 a 7");
     scanf("%d", &dia);
 
     switch(dia){
