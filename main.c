@@ -6,44 +6,11 @@ int main(){
 setlocale(LC_ALL, "pt_BR.UTF-8");
     
 
-    int diaDasemana;
+ >=7 aprov 
 
-    printf("Digite um número de 1 a 7");
-    scanf("%d", &diaDasemana);
+ >=5 recup
 
-    switch(diaDasemana){
-    case 1:
-    printf("Domingo!");
-    break;
-
-    case 2:
-    printf("Segunda-feira");
-    break;
-
-    case 3:
-    printf("terça-feira");
-    break;
-
-    case 4:
-    printf("Quarta-feira");
-    break;
-
-    case 5:
-    printf("Quinta-feira");
-    break;
-
-    case 6:
-    printf("Sexta-feira");
-    break;
-
-    case 7:
-    printf("Sábado!");
-    break;
-
-    default:
-    printf("Número inválido!!");
-    break;
-    }
+ reprov..
     
      return 0;
 }
