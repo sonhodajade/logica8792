@@ -5,15 +5,25 @@ int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8");
     
-float a, b, c;
+int opcao;
+printf("--- SISTEMA DE PERDÁGIO ---\n");
+printf("1 - Moto\n");
+printf("2 - Carro passeio\n");
+scanf("%d", &opcao);
 
-printf("Digite os três lados de um triângulo: ");
-scanf("%f %f %f", &a, &b, &c);
+switch (opcao)
+{
+    case 1:
+    printf("categoria: Moto | Tarifa: R$ 5,00\n");
+    break;
 
-if(a + b > c && b + c > a){
-    printf("os lados formam um triângulo!\n");
-}else{
-    printf("Os lados não formam um triângulo!\n");
+    case 2:
+    printf("categoria: carro passeio | Tarifa: R$ 10,00\n");
+    break;
+
+    default:
+    printf("erro: categoria não cadastrada no sistema.\n);
+        break;
 }
 
 
