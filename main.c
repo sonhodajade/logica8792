@@ -5,25 +5,19 @@ int main(){
 
 setlocale(LC_ALL, "pt_BR.UTF-8");
     
-float n1, n2, n3, media;
+float a, b, c;
 
-printf("Digite a nota 1: ");
-scanf("%f", &n1);
+printf("Digite os três lados de um triângulo: ");
+scanf("%f %f %f", &a, &b, &c);
 
-printf("Digite a nota 2: ");
-scanf(%f, &n2);
+if(a == b && b == c){
+    printf("equilátero!\n");
+}else if(a == b || a == c || b ==c){
+printf("isosceles!\n");
+    }else{
+        printf("Escaleno!\n");
+    }
 
-printf("Digite a nota 3: ");
-scanf("%f", &n3);
-media = (n1 + n2 + n3) / 3;
-
-if(media >= 7){
-    printf("aprovado!");
-}else if(media >=5){
-    printf("recuperação!");
-}else{
-    printf("reprovado");
-}
 
  
     
