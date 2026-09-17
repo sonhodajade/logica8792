@@ -19,9 +19,9 @@ media = (n1 + n2 + n3) / 3;
 
 if(nota >= 7){
     printf("Aprovado"); 
-}else{
+}else if{
     printf("reprovado");
-}
+
 
  
     
