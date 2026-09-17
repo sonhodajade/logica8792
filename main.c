@@ -17,11 +17,13 @@ printf("Digite a nota 3: ");
 scanf("%f", &n3);
 media = (n1 + n2 + n3) / 3;
 
-if(nota >= 7){
-    printf("Aprovado"); 
-}else if{
+if(media >= 7){
+    printf("aprovado!");
+}else if(media >=5){
+    printf("recuperação!");
+}else{
     printf("reprovado");
-
+}
 
  
     
