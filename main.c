@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<locale.h>
 
-void saudar(const char *nome){
-    printf("olá %s!\n", nome);
+int somar(int a, int b){
+    return a + b;
 }
 
 int main(){
