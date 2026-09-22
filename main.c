@@ -1,14 +1,16 @@
 #include<stdio.h>
 #include<locale.h>
 
-void saudar(){
-    printf("olá mundo!\n");
+void saudar(const char *nome){
+    printf("olá %s!\n", nome);
 }
 
 int main(){
     setlocale(LC_ALL, "pt_br.UTF-8");
 
-    saudar();
+    saudar("Marcos");
+    saudar("Silva");
+    saudar("Ferreira");
 
 
 
