@@ -38,14 +38,11 @@ int dividir(int a, int b){
 int main(){
     setlocale(LC_ALL, "pt_br.UTF-8");
 
-    int resultado = somar(5, 3);
-    int resultado1 = subtrair(100, 2);
-    int resultado2 = multiplicar(5, 8);
-    int resultado3 = dividir(16,2);
-    printf("O resultado da soma é: %d\n", resultado);
-    printf("O resultado da subtração é: %d\n", resultado1);
-    printf("O resultado da multiplicação é %d\n", resultado2);
-    printf("O resultado da divisão é: %d\n", resultado3);
+    int num[5] = {1, 2, 3, 4, 5};
+
+    printf("%d", num{0});
+    printf("%d", num[2]);
+
 
 
     
