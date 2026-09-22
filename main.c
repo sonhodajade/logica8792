@@ -21,7 +21,10 @@ int main(){
     setlocale(LC_ALL, "pt_br.UTF-8");
 
     int resultado = somar (5, 3);
-    printf("o resultado de soma é: %d", resultado);
+    printf("o resultado da soma é: %d", resultado);
+
+    int resultado = subtrair (5, 3);
+    printf("o resultado da subtração é: %d", resultado);
 
     
 
