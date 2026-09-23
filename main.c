@@ -12,8 +12,15 @@ int main(){
 
     int num[5] = {1, 2, 3, 4, 5};
 
-    printf("%d\n", num[0]);
-    printf("%d\n", num[2]);
+    for(int i = 0; i < 5; i++){
+        i = 0;
+        i = 1;
+        i = 2;
+        i = 3;
+        i = 4;
+    }
+    
+    
 
 
 
