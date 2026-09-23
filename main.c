@@ -10,9 +10,10 @@
 int main(){
     setlocale(LC_ALL, "pt_br.UTF-8");
 
-    int num[5] = {1, 2, 3, 4, 5};
+    int num[5] = {10, 20, 30, 40, 50};
 
     for(int i = 0; i < 5; i++){
+        printf("%d\n", num[i]);
         i = 0;
         i = 1;
         i = 2;
