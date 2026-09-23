@@ -14,11 +14,7 @@ int main(){
 
     for(int i = 0; i < 5; i++){
         printf("%d\n", num[i]);
-        i = 0;
-        i = 1;
-        i = 2;
-        i = 3;
-        i = 4;
+        
     }
     
     
