@@ -13,7 +13,7 @@ int main(){
 
     int numero;
     printf("Digite um número: ");
-    scanf("%d, &numero); ")
+    scanf("%d", &numero);
     
     int quadrado = (int)pow(numero, 2);
     int cubo = (int)pow(numero, 3);
