@@ -10,7 +10,7 @@
 
 void tabuada(int n){
     int resultado;
-    printf("Tabuada dp %d:\n", n);
+    printf("Tabuada do %d:\n", n);
     for(int i = 1; i <= 10; i++){
         resultado = n * i;
         printf("%d x %d = %d\n", n, i, resultado);
@@ -25,7 +25,7 @@ int main(){
    
    int ultimo = tabuada(7);
    printf("Último valor da tabuada: %d\n", ultimo);
-   
+
      return 0;
 
 
