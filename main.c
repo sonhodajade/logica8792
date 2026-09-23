@@ -9,10 +9,13 @@
 
 
 void tabuada(int n){
-    printf("Tabuada do %d\n", n);
+    int resultado;
+    printf("Tabuada dp %d:\n", n);
     for(int i = 1; i <= 10; i++){
-        printf("%d x %d = %d\n", n, i, n * i);
+        resultado = n * i;
+        printf("%d x %d = %d\n", n, i, resultado);
     }
+    return resultado;
 }
 
 
@@ -20,8 +23,9 @@ void tabuada(int n){
 int main(){
     setlocale(LC_ALL, "pt_BR.UTF-8");
    
-   tabuada(7);
-
+   int ultimo = tabuada(7);
+   printf("Último valor da tabuada: %d\n", ultimo);
+   
      return 0;
 
 
