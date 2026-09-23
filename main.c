@@ -8,7 +8,7 @@
 
 
 
-void tabuada(int n){
+int tabuada(int n){
     int resultado;
     printf("Tabuada do %d:\n", n);
     for(int i = 1; i <= 10; i++){
