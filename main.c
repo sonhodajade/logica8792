@@ -22,7 +22,7 @@ int main(){
     
     // simula o relogio
     for(int i = 0; i < 12; i++){
-        for(int j = 0; j < 60; J++){
+        for(int j = 0; j < 60; j++){
             printf("Hora: %2d:%02d\n", horas[i], minutos[j]);
         }
     }
