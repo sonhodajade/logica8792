@@ -8,19 +8,23 @@
 
 
 
-int main(){
-    setlocale(LC_ALL, "pt_br.UTF-8");
+int fatorial(int n){
+    int resultado = 1;
+    for(int i = 1; i <= n; i++){
+        resultado *= i;
 
-    int numero;
-    printf("Digite um número: ");
-    scanf("%d", &numero);
-    
-    int quadrado = (int)pow(numero, 2);
-    int cubo = (int)pow(numero, 3);
-    printf("Quadrado de %d = %d\n", numero, quadrado);
-    printf("Cubo de %d = %d", numero, cubo);
+    }
+    return resultado;
+}
+
+int main(){
+    setlocale(LC_ALL, "pt_BR.UTF-8");
+    int numero = 5;
+    printf("fatorial de %d = %d\n", numero, fatorial(numero));
 
      return 0;
+
+
 }
 
 
