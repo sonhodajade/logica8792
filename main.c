@@ -11,7 +11,7 @@ void contarVogais(char palavra[]){
         if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'
         || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'){
             contador++;
-        // }//strlen calcula os caracteres de uma palavra.
+         } // }//strlen calcula os caracteres de uma palavra.
             
     }
     printf("A palavra '%s' tem %d vogais.\n", palavra, contador);
@@ -29,7 +29,7 @@ void contarVogais(char palavra[]){
 int main(){
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    contarVogais("Bora Bill");
+    contarVogais("BoraBill");
     contarvogais("Murakumo");
     contarvogais("Antes");
 
