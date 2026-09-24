@@ -32,7 +32,7 @@ int main(){
     char p[50];
 
     printf("Digite uma palavra:\n");
-    scanf("%s", &p);
+    scanf("%s", p);
 
     contarVogais(p);
 
