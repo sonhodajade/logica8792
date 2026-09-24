@@ -29,9 +29,12 @@ void contarVogais(char palavra[]){
 int main(){
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    contarVogais("BoraBill");
-    contarVogais("Murakumo");
-    contarVogais("Antes");
+    char p[50];
+
+    printf("Digite uma palavra:\n");
+    scanf("%s", &p);
+
+    contarVogais(p);
 
    
 
