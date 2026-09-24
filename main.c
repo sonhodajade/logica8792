@@ -18,7 +18,7 @@ while (opcao != 0){
     printf("3 - Consultar\n");
     printf("0 - sair\n");
     printf("Escolha: ");
-    scanf("%d, &opcao");
+    scanf("%d", &opcao);
 
     switch(opcao){
         case 1: printf("você escolheu depositar\n"); break;
