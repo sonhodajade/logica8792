@@ -13,7 +13,7 @@ setlocale(LC_ALL, "pt_br.UTF-8");
 for(int i = 0; i <= 50; i += 2){
     printf("%d\n", i);
 }
-i++;
+
 
 
 
