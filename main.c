@@ -11,7 +11,7 @@ setlocale(LC_ALL, "pt_br.UTF-8");
 
 int opcao = -1;
 
-while (opcao !=){
+while (opcao != 0){
     printf("\nMenu: \n");
     printf("1 - Depositar\n");
     printf("2 - Sacar\n");
