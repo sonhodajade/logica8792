@@ -29,7 +29,10 @@ void contarVogais(char palavra[]){
 int main(){
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    linha(1000)
+    contarVogais("Bora Bill");
+    contarvogais("Murakumo");
+    contarvogais("Antes");
+
    
 
      return 0;
