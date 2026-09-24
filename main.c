@@ -30,8 +30,8 @@ int main(){
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
     contarVogais("BoraBill");
-    contarvogais("Murakumo");
-    contarvogais("Antes");
+    contarVogais("Murakumo");
+    contarVogais("Antes");
 
    
 
