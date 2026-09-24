@@ -5,20 +5,19 @@
 
 
 
+
+
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-
-int numero, soma = 0;
-
-printf("digite número para somar (0 encerra): ");
-scanf("%d", &numero);
-
-while(numero != 0){
-    soma += numero;
-    scanf("%d", &numero);
+for(int i = 0; i <= 50; i += 2){
+    printf("%d\n", i);
 }
-printf("Soma total = %d\n", soma);
+i++;
+
+
+
+
 
    
 
