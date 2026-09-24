@@ -14,7 +14,7 @@ int numero, soma = 0;
 printf("digite número para somar (0 encerra): ");
 scanf("%d", &numero);
 
-while(numero !=0){
+while(numero != 0){
     soma += numero;
     scanf("%d", &numero);
 }
