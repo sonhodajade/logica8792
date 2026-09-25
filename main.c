@@ -9,7 +9,7 @@
 
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
-
+int n,s;
 int resultado;
 
 printf("Digite um número para a tabuada: ");
