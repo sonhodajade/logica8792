@@ -10,21 +10,16 @@
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-int n, soma = 0;
+int n;
+long long fatorial = 1;
 
-printf("Digite um valor para n: ");
+printf("Digite um número: ");
 scanf("%d", &n);
 
 for(int i = 1; i <= n; i++){
-    soma +=i;
+    fatorial *= i;
 }
-
-printf("O resultado da soma é: %d\n", soma);
-
-
-
-
-
+printf("Fatorial: %lld\n", fatorial);
    
 
      return 0;
