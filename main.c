@@ -10,17 +10,17 @@
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-int n;
-long long fatorial = 1;
+int  n,s;
 
-printf("Digite um número: ");
-scanf("%d", &n);
+printf("Digite um número:\n");
+scanf("%d",&n);
 
-for(int i = 1; i <= n; i++){
-    fatorial *= i;
+for(int i = 1; i <= 10; i++){
+    s = i *n;
+    printf("\n%d x %d", i,n,s);
 }
-printf("Fatorial: %lld\n", fatorial);
-   
+
+
 
      return 0;
 
