@@ -9,21 +9,14 @@
 
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
-int n,s;
-int resultado;
+
+int tabuada;
 
 printf("Digite um número para a tabuada: ");
-resultado = scanf("%d", &n);
+scanf("%d", &n);
 
-if(resultado != 1){
-    printf("Entrada inválida! Por favor, digite apenas números!");
-    return 1;
-}
+for(int i = 1; i <= 10; i++)
 
-for(int i = 1; i <= 10; i++){
-    int resposta = n * i;
-    printf("O resultado de %d x %d é: %d\n", n, i, resposta);
-}
      return 0;
 
 
