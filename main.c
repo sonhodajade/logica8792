@@ -17,7 +17,7 @@ for(int i = 0; i < n; i++){
         if((i + j) % 2 == 0){
             printf("[]");
         }else{
-            printf("[#]");
+            printf("[feijão]");
         }
     }
     printf("\n");
