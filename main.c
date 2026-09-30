@@ -10,7 +10,7 @@
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-int n; primo = 1;
+int n; primo = 0;
 printf("Digite um número: ");
 scanf("%d", &n);
 
