@@ -10,17 +10,31 @@
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-int n;
-
-printf("Digite o tamanho do triângulo: ");
+int n; primo = 1;
+printf("Digite um número: ");
 scanf("%d", &n);
 
-for(int i = n; i >= 1; i--){
-    for(int j = 1; j <= i; j++){
-        printf("* ");
+if(n < 2){
+primo = 0;
+
+}else{
+
+for(int i = 2; i < n; i++){
+    if(n % i == 0){
+    primo = 0;
+    break;
     }
-    printf("\n");
 }
+}
+
+if(primo){
+printf("%d é primo\n", n);
+}else{
+printf("%d não é primo\n", n);
+}
+
+
+
      return 0;
 
 
