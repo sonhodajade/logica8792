@@ -10,16 +10,25 @@
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-int v[10];
-for(int i = 0; i < 10; i++){
-    printf("Digite o valor %d: ", i + 1);
-    scanf("%d", &v[i]);
+int cubo[2][3][4] = {
+    {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12}
+    }, 
+    {
+        {13, 14, 15, 16},
+        {17, 18, 19, 20},
+        {21, 22, 23, 24}
+    }
+};
+for(int i = 0; i < 2; i++){
+    for(int j = 0; j < 3; j++){
+        for(int k = 0; k < 4; k++){
+            printf("Número da matriz: %d\n", cubo[i][j][k]);
+        }
+    }
 }
-printf("vetor invertido: \n");
-for(int i = 9; i >= 0; i--){
-    printf("%d", v[i]);
-}
-printf("\n");
      return 0;
 
 
