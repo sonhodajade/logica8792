@@ -20,13 +20,14 @@ for(int i = 0; i < n; i++){
     printf("Digite o valor %d: ", i + 1);
     scanf("%d", &v[i]);
 }
-int maior = v[0], menor = v[0];
-for(int i = 1; i < n; i++){
-    if(v[i] > maior) maior = v[i];
-    if(v[i] < menor) menor = v[i];
+int soma = 0;
+for(int i = 0; i < n; i++){
+    soma += v[i];
 }
-printf("maior: %d\n", maior);
-printf("Menor: %d\n", menor);
+float media = (float)soma/n;
+printf("soma: %d\n", soma);
+printf("Média: %.2f\n". media):
+
 
      return 0;
 
