@@ -26,7 +26,7 @@ for(int i = 0; i < n; i++){
 }
 float media = (float)soma/n;
 printf("soma: %d\n", soma);
-printf("Média: %.2f\n". media):
+printf("Média: %.2f\n". media);
 
 
      return 0;
