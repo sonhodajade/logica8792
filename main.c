@@ -16,17 +16,18 @@ printf("Digite o tamanho do vetor: ");
 scanf("%d", &n);
 
 int v[n];
+int pares = 0, impares = 0;
 for(int i = 0; i < n; i++){
     printf("Digite o valor %d: ", i + 1);
     scanf("%d", &v[i]);
+    if(v[i] % 2 == 0){
+        pares++;
+    }else{
+        impares ++;
+    }
 }
-int soma = 0;
-for(int i = 0; i < n; i++){
-    soma += v[i];
-}
-float media = (float)soma/n;
-printf("soma: %d\n", soma);
-printf("Média: %.2f\n", media);
+printf("pares: %d\n", pares);
+printf("impares: %d\n", impares);
 
 
      return 0;
