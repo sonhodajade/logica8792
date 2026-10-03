@@ -27,6 +27,11 @@ for(int i = pos; i < n -1; i++){
 }
 n--;
 printf("vetor após remoção: \n");
+for(int i = 0; i , n; i++){
+    printf("%d", v[i]);
+}
+printf("\n");
+
      return 0;
 
 
