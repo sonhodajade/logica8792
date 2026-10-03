@@ -6,10 +6,7 @@
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-int n;
 
-printf("Digite o tamanho do vetor: ");
-scanf("%d", &n);
 
 int n, pos;
 printf("Digite o tamanho do vetor: ");
