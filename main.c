@@ -2,22 +2,20 @@
 #include<locale.h>
 #include<math.h>
 
-
 int main(){
     setlocale(LC_ALL, "pt_br.UTF-8");
 
-   int numero;
+    int numero;
     printf("Digite um número: ");
-    scanf("%d, &numero); ")
+
+     scanf("%d", &numero);
 
     int quadrado = (int)pow(numero, 2);
     int cubo = (int)pow(numero, 3);
     printf("Quadrado de %d = %d\n", numero, quadrado);
     printf("Cubo de %d = %d", numero, cubo);
 
-return 0;
-
-} 
-
+     return 0;
+}
 
 
