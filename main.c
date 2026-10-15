@@ -1,24 +1,21 @@
 #include<stdio.h>
 #include<locale.h>
-#include<math.h>
 #include<string.h>
 
 int main(){
 setlocale(LC_ALL, "pt_br.UTF-8");
 
-
-
 int n;
 printf("Quantos nomes deseja digitar?");
 scanf("%d", &n);
 char nomes[n][50];
-for(int i = 0; i < n; I++){
+for(int i = 0; i < n; i++){
     printf("Digite o nome %d: ", i + 1);
     scanf("%s", nomes[i]);
 }
 for(int i = 0; i < n - 1; i++){
     for(int j = 0; j < n - 1; j++){
-        if(strcmp(nomes[j + 1]) > 0){
+        if(strcmp(nomes[j], nomes[j +1]) > 0){
             char temp[50];
             strcpy(temp, nomes[j]);
             strcpy(nomes[j], nomes[j + 1]);
