@@ -2,19 +2,32 @@
 #include<locale.h>
 #include<math.h>
 
+struct pessoa{
+    char nome[50];
+    int idade;
+    float altura;
+    float peso;
+
+};
+
 int main(){
-    setlocale(LC_ALL, "pt_br.UTF-8");
+    setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    int numero;
-    printf("Digite um número: ");
+    printf("---- Bem-vindo à academia ----")
 
-     scanf("%d", &numero);
+    struct p1;
 
-    int quadrado = (int)pow(numero, 2);
-    int cubo = (int)pow(numero, 3);
-    printf("Quadrado de %d = %d\n", numero, quadrado);
-    printf("Cubo de %d = %d", numero, cubo);
+    printf("Digite o nome: ");
+    scanf("%s", p1.nome);
 
+    printf("Digite a idade: ");
+    scanf("%d", &p1.idade);
+
+    printf("Digite a altura: ");
+    scanf("&.2f", &p1.altura);
+
+    printf("\n--- Dados da pessoa ---\n");
+    
      return 0;
 }
 
