@@ -13,9 +13,12 @@ struct pessoa{
 int main(){
     setlocale(LC_ALL, "pt_BR.UTF-8");
 
-    printf("---- Bem-vindo à academia ----")
+    printf("---- Bem-vindo à academia ----");
+    printf("\n");
+    
 
-    struct p1;
+
+    struct pessoa p1;
 
     printf("Digite o nome: ");
     scanf("%s", p1.nome);
@@ -24,10 +27,17 @@ int main(){
     scanf("%d", &p1.idade);
 
     printf("Digite a altura: ");
-    scanf("&.2f", &p1.altura);
+    scanf("%f", &p1.altura);
 
     printf("\n--- Dados da pessoa ---\n");
-    
+
+    printf("nome: %s\n", p1.nome);
+    printf("idade: %d\n", p1.idade);
+    printf("Altura: %.2f\n", p1.altura);
+    pritnf("peso: %.2f\n", p1.peso);
+
+        
+
      return 0;
 }
 
