@@ -20,8 +20,10 @@ int main(){
 
     int n;
     printf("Quantas pessoas deseja cadastrar: ");
-    Scanf("%d", &n);
+    scanf("%d", &n);
+
     getchar();
+
     struct pessoa p1[n];
     for(int i = 0; i < n; i++){
         printf("\nPessoa %d\n, ", i + 1);
