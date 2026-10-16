@@ -34,7 +34,7 @@ int main(){
     printf("nome: %s\n", p1.nome);
     printf("idade: %d\n", p1.idade);
     printf("Altura: %.2f\n", p1.altura);
-    pritnf("peso: %.2f\n", p1.peso);
+    printf("peso: %.2f\n", p1.peso);
 
         
 
