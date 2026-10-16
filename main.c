@@ -18,11 +18,29 @@ int main(){
     
 
 
-    struct pessoa p1;
+    int n;
+    printf("Quantas pessoas deseja cadastrar: ");
+    Scanf("%d", &n);
+    getchar();
+    struct p1 p1[n];
+    for(int i = 0; i < n; i++){
+        printf("\nPessoa %d\n, ", i + 1);
+        printf("Nome completo: ");
+        fgets(p1[i].nome, sizeof(p1[i].nome), stdin);
 
-    printf("Digite o nome completo: ");
-    fgets(p1.nome, sizeof(p1.nome), stdin);
-        
+        printf("idade: ");
+        scanf("%d", &p1[i].idade);
+        printf("Altura: ");
+        scanf("%f", &p1[i].altura);
+        printf("Peso: ");
+        scanf("%f", &p1[i].peso);
+        getchar();
+    }
+    printf("\n--- Lista de Pessoas ---\n");
+    for(int i = 0; i < n; i++){
+        printf("Nome: %s | Idade: %d | Altura: %.2f | peso: %.2f");
+    }
+
 
      return 0;
 }
