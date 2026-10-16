@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<locale.h>
+#include<windows.h>
 #include<math.h>
 
 struct pessoa{
@@ -11,8 +11,9 @@ struct pessoa{
 };
 
 int main(){
-    setlocale(LC_ALL, "pt_BR.UTF-8");
-
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+    
     printf("---- Bem-vindo à academia ----");
     printf("\n");
     
