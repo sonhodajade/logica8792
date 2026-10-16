@@ -20,25 +20,8 @@ int main(){
 
     struct pessoa p1;
 
-    printf("Digite o nome: ");
-    scanf("%s", p1.nome);
-
-    printf("Digite a idade: ");
-    scanf("%d", &p1.idade);
-
-    printf("Digite a altura: ");
-    scanf("%f", &p1.altura);
-
-    printf("Digite o peso: ");
-    scanf("%f", &p1.peso);
-
-    printf("\n--- Dados da pessoa ---\n");
-
-    printf("nome: %s\n", p1.nome);
-    printf("idade: %d\n", p1.idade);
-    printf("Altura: %.2f\n", p1.altura);
-    printf("peso: %.2f\n", p1.peso);
-
+    printf("Digite o nome completo: ");
+    fgets(p1.nome, sizeof(p1.nome), stdin);
         
 
      return 0;
