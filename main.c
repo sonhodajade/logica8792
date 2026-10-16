@@ -30,7 +30,7 @@ int main(){
     scanf("%f", &p1.altura);
 
     printf("Digite o peso: ");
-    scanf("%d", &p1.peso);
+    scanf("%f", &p1.peso);
 
     printf("\n--- Dados da pessoa ---\n");
 
