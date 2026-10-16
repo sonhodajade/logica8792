@@ -11,39 +11,27 @@ struct pessoa{
 };
 
 int main(){
-    SetConsoleCP(65001);
-    SetConsoleOutputCP(65001);
-    
-    printf("---- Bem-vindo à academia ----");
-    printf("\n");
-    
-
+    Setlocale(LC_ALL, "Portuguese_Brazil.1252");
 
     int n;
-    printf("Quantas pessoas deseja cadastrar: ");
+
+    printf("Digite o tamanho do vetor: ");
     scanf("%d", &n);
 
-    getchar();
-
-    struct pessoa p1[n];
-    for(int i = 0; i < n; i++){
-        printf("\nPessoa %d\n, ", i + 1);
-        printf("Nome completo: ");
-        fgets(p1[i].nome, sizeof(p1[i].nome), stdin);
-
-        printf("idade: ");
-        scanf("%d", &p1[i].idade);
-        printf("Altura: ");
-        scanf("%f", &p1[i].altura);
-        printf("Peso: ");
-        scanf("%f", &p1[i].peso);
-        getchar();
+    int v[n];
+    for(int i = 0; i < n - 1; i++){
+        for(int j = 0; j < n - i - 1; j++){
+            if(v[j] > v[j + 1]){
+                int temp = v[j];
+                v[j] = v[j + 1];
+                v[j + 1] = temp;
+            }
+        }
     }
-    printf("\n--- Lista de Pessoas ---\n");
-    for(int i = 0; i < n; i++){
-        printf("Nome: %s | Idade: %d | Altura: %.2f | peso: %.2f");
-    }
-
+printf("vetor ordenado: \n");
+for(int i = 0; i < n; i++){
+    printf("%d", v[i]);
+}
 
      return 0;
 }
