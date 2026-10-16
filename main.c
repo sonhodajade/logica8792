@@ -22,7 +22,7 @@ int main(){
     printf("Quantas pessoas deseja cadastrar: ");
     Scanf("%d", &n);
     getchar();
-    struct p1 p1[n];
+    struct pessoa p1[n];
     for(int i = 0; i < n; i++){
         printf("\nPessoa %d\n, ", i + 1);
         printf("Nome completo: ");
