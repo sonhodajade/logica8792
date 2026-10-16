@@ -29,6 +29,9 @@ int main(){
     printf("Digite a altura: ");
     scanf("%f", &p1.altura);
 
+    printf("Digite o peso: ");
+    scanf("%d", &p1.peso);
+
     printf("\n--- Dados da pessoa ---\n");
 
     printf("nome: %s\n", p1.nome);
