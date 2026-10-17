@@ -20,6 +20,12 @@ int main(){
     scanf("%d", &n);
 
     int v[n];
+    for(int i =0; i < n; i++){
+        printf("Digite o valor %d:", i + 1);
+        scanf("%d", &v[i]);
+    }
+
+
     for(int i = 0; i < n - 1; i++){
         for(int j = 0; j < n - i - 1; j++){
             if(v[j] > v[j + 1]){
@@ -33,6 +39,7 @@ printf("vetor ordenado: \n");
 for(int i = 0; i < n; i++){
     printf("%d", v[i]);
 }
+printf("\n");
 
      return 0;
 }
