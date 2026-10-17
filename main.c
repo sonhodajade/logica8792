@@ -11,7 +11,8 @@ struct pessoa{
 };
 
 int main(){
-    Setlocale(LC_ALL, "Portuguese_Brazil.1252");
+    SetConsoleCP(65001);
+    SetConsoleOutCupCP(65001);
 
     int n;
 
