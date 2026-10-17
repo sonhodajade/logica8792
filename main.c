@@ -5,7 +5,7 @@
 
 int main(){
     SetConsoleCP(65001);
-    SetConsoleOutPut(65001); 
+    SetConsoleOutPutCP(65001); 
 
     int n;
 
