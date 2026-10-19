@@ -15,19 +15,16 @@ int main(){
     for(int i = 1; i <= n; i++){
         printf("%d\n", i);
 
-    }
+    
 
-    int numero, soma = 0;
+    
 
+for(int i = 1; 1 <= 10; i++){
+    int resultado= i * n;
+    printf("%d x %d = %d\n", i, n, resultado);
 
-    printf("Digite um número para somar : ");
-    scanf("%d", &n); 
-
-    while(numero != 0){
-    soma += n;
-    scanf("%d", &n); 
 }
-printf("soma total = %d\n", soma);
+
 
 
     
