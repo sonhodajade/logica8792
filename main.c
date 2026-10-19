@@ -7,12 +7,17 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001); 
 
-int i = 30;
+int n;
+printf("Digite um valor para n; ");
+scanf("%d", &n);
 
-while (i != 30, i--){
-    printf("%d\n", i);
-
+while(n >= 0){
+    printf("%d\n", n);
+    n--;
 }
+
+
+
     
 
 
