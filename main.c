@@ -13,7 +13,7 @@ int main(){
 //     printf("%d - programar\n", i);
 
     while (i != 10){
-        printf("%d\n", i)
+        printf("%d\n", i);
         i++;
         printf("%d - programar\n", i++);
     
