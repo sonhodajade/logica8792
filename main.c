@@ -12,7 +12,7 @@ int main(){
  printf("Digite sua idade: ");
  scanf("%d", &idade);
  printf("Possui ingresso? (1 - sim / 0 - Não)");
- scnaf("%d", &temIngresso);
+ scanf("%d", &temIngresso);
 
  if(idade >= 18 && temIngresso){
     printf("Entrada permitida!\n");
