@@ -20,7 +20,7 @@ int main(){
     while(i != 1){
         printf("%d\n", i);
         i--;
-        printf("%d - programar\n", i);
+        
     }
     
 
