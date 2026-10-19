@@ -17,7 +17,7 @@ int main(){
     //     i++;
     //     printf("%d - programar\n", i++);
 
-    while(i != 1){
+    while(i != 0){
         printf("%d\n", i);
         i--;
         
