@@ -12,11 +12,18 @@ int main(){
 //    for(int i = 1; i <= 5; i++){
 //     printf("%d - programar\n", i);
 
-    while (i != 10){
+    // while (i != 10){
+    //     printf("%d\n", i);
+    //     i++;
+    //     printf("%d - programar\n", i++);
+
+    while(i != 1){
         printf("%d\n", i);
-        i++;
-        printf("%d - programar\n", i++);
+        i--;
+        printf("%d - programar\n", i);
+    }
     
+
     }
 
    
