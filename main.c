@@ -12,7 +12,7 @@ int main(){
 //    for(int i = 1; i <= 5; i++){
 //     printf("%d - programar\n", i);
 
-    while (i <= 6){
+    while (i != 6){
         printf("%d\n", i)
         i++;
         printf("%d - programar\n", i);
