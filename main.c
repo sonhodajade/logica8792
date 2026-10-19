@@ -15,7 +15,7 @@ int main(){
     while (i != 10){
         printf("%d\n", i)
         i++;
-        printf("%d - programar\n", i);
+        printf("%d - programar\n", i++);
     
     }
 
