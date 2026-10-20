@@ -7,15 +7,19 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001); 
 
-int n = 1, soma = 0;
+    int numero, soma = 0;
 
-while(n <= 100){
-    soma += n;
-    soma -= 1;
-    printf("%d + %d = %d\n", soma, n, soma - n);
-    n++;
-    
+printf("digite número para somar (0 encerra): ");
+scanf("%d", &numero);
+
+while(numero !=0){
+    soma += numero;
+    printf("Digite um número (0 encerra): ");
+    scanf("%d", &numero);
 }
+printf("Soma = %d\n", soma);
+
+
 
 
 
