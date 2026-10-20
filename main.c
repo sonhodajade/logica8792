@@ -7,13 +7,15 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001); 
 
-int n;
-printf("Digite um valor para n; ");
-scanf("%d", &n);
+int numero, soma = 1;
 
-while(n >= 0){
-    printf("%d\n", n);
-    n--;
+while(soma <= 100);
+
+for(i = 1; i <= 100; i++){
+    int result = i + soma; 
+    printf("%d + %d, %d\n", i, soma, result);
+    soma ++;
+    
 }
 
 
