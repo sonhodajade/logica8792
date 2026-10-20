@@ -7,9 +7,9 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001); 
 
-int numero, soma = i;
+int n, i, soma;
 
-while(soma <= 100);
+while(soma <= 100){
 
 for(i = 1; i <= 100; i++){
     int result = i + soma; 
@@ -22,7 +22,7 @@ for(i = 1; i <= 100; i++){
 
     
 
-
+}
 
 
 
