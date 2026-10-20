@@ -7,21 +7,14 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001); 
 
-int n, i, soma;
+int n = 1, soma = 0;
 
-while(soma <= 100){
-
-for(i = 1; i <= 100; i++){
-    int result = i + soma; 
-    printf("%d + %d, %d\n", i, soma, result);
-    soma++;
-
-}
-
-
-
+while(n <= 100){
+    soma += n;
+    soma -= 1;
+    printf("%d + %d = %d\n", soma, n, soma - n);
+    n++;
     
-
 }
 
 
