@@ -34,6 +34,7 @@ int main(){
             }
         }
     }
+    printf("\nBINGO em %d bolas!\n", rodadas);
 
 
     return 0;
