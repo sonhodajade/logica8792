@@ -6,26 +6,50 @@
 #include<stdlib.h>
 #include<time.h>
 
-void exibirMatriz(int m[][2]){
-    for(int i = 0; i < 2; i++){
-        for(int j = 0; j < 2; j++){
-            printf("%d", m[i][j]);
-        }
-        printf("\n");
-    }
-}
 
 int main(){
-    SetConsoleCP(65001);
-    SetConsoleOutputCP(65001); 
 
-    int m[2][2] = {
-        {1, 2},
-        {3, 4},
-    };
-    exibirMatriz(m);
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+
+    int opcao;
+    char placa[20] = "";
+
+    do{
+        printf("\n=== SISTEMA DE PLACAS ===\n");
+        printf("1 - Registrar placa\n");
+        printf("2 - Ver placa registrada\n");
+        printf("3 - Sair\n");
+        printf("Escolha uma opção: ");
+        scanf("%d", &opcao);
+
+        switch(opcao){
+
+            case 1: 
+            printf("Digite a placa do veículo: ");
+            scanf("%s", placa);
+            printf("Placa registrada com sucesso!\n");
+            break;
+
+            case 2:
+            if(strlen(placa) == 0){
+                printf("Nenhuma placa registrada.\n");
+            }else{
+                printf("Placa registrada: %s\n", placa);
+            }
+            break;
+
+            case 3:
+            printf("Saindo do sistema...\n");
+            break;
+            default:
+            printf("Opção inválida!\n");
+        }
+    }while(opcao !=3);
+    
 
     
+
 
 
     return 0;
