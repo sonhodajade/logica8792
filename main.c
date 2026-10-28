@@ -6,9 +6,8 @@
 #include<stdlib.h>
 #include<time.h>
 
-void mostrarNumero(int numero){
-    pritnf("Número: %d\n", numero);
-
+void somar(int a, int b){
+    printf("soma = %d\n", a + b);
 }
 
 
@@ -17,7 +16,7 @@ int main(){
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    mostrarNumero(40);
+    somar(5, 2);
     
     
 
