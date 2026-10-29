@@ -6,17 +6,20 @@
 #include<stdlib.h>
 #include<time.h>
 
-void somar(int a, int b){
-    printf("soma = %d\n", a + b);
-}
+int dobro(int numero){
+    return numero * 2;
 
+}
 
 int main(){
 
     SetConsoleCP(65001);
     SetConsoleOutputCP(65001);
 
-    somar(5, 2);
+    int valor = 8;
+    printf("Dobro = %d\n", dobro(valor));
+
+   
     
     
 
