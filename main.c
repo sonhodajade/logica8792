@@ -30,7 +30,7 @@ int main(){
     mostraVetor(numeros, 5);
     inverterVetor(numeros, 5);
     printf("Depois: ");
-    mostrarVetor(numeros, 5);
+    mostraVetor(numeros, 5);
 
     
 
