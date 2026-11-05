@@ -21,7 +21,7 @@ int main(){
     setlocale(LC_ALL, "portuguese_Brazil.1252");
     setlocale(LC_ALL, "pt-BR.UTF8");
 
-    int numeros[] = {10.5, 20.5, 30.5, 40.5, 50.5};
+    float numeros[] = {10.5, 20.5, 30.5, 40.5, 50.5};
     int tamanho = 5;
     float procurado;
     printf("Digite o número que deseja procurar: ");
