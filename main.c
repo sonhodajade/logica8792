@@ -7,17 +7,11 @@
 #include<time.h>
 #include<string.h>
 
-float lerPosition(char mensagem[]){
-    float valor;
-    do{
-        printf("%s", mensagem);
-        scanf("%f", &valor);
-        if(valor <= 0){
-            printf("Valor inválido! Digite um número maior que 0.\n");
-        }
-
-    }while(valor <= 0);
-    return valor;
+int somar(int n){
+    if(n == 0){
+        return 0;
+    }
+    return n + somar(n - 1);
 }
 
 int main(){
@@ -25,12 +19,11 @@ int main(){
     setlocale(LC_ALL, "portuguese_Brazil.1252");
     setlocale(LC_ALL, "pt-BR.UTF8");
 
-    float idade = lerPositivo("Digite a idade: ");
-    float peso = lerPositivo("Digite o peso (kg): ");
-    float altura = lerPositivo("Digite a altura (m): ");
+   int resultado = somar(5);
+   printf("Resultado: %d\n", resultado);
 
-    printf("\nIdade: %.0f anos\n", idade);
-    printf("IMC: %f\n", peso / (altura * altura));
+    
+    
 
 
 
