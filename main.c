@@ -5,12 +5,14 @@
 #include<locale.h>
 #include<string.h>
 
-int inverter(int numero, int resultado){
-    if(numero == 0){
-        return resultado;
+int fibonacci(int n){
+    if(n == 0){
+        return 0;
     }
-    return inverter(numero / 10, resultado * 10 + numero % 10);
-
+    if(n == 1){
+        return 1;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 
@@ -18,7 +20,11 @@ int main(){
 
     setlocale(LC_ALL, "portuguese_Brazil.1252");
     setlocale(LC_ALL, "pt-BR.UTF8");
-    printf("Invertido: %d\n", inverter(1234, 0));
+    int i;
+    for( i = 0; i < 10; i++){
+        printf("%d\n", fibonacci(i));
+    }
+
 
    
     
