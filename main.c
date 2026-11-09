@@ -5,12 +5,12 @@
 #include<locale.h>
 #include<string.h>
 
-int soma (int n){
-    int total = 0;
+long long fatorial(int n){
+    long long resultado = 1;
     for(int i = 1; i <= n; i++){
-        total += i;
+        resultado *= i;
     }
-    return total;
+    return resultado;
 }
 
 
@@ -21,7 +21,7 @@ int main(){
 
     setlocale(LC_ALL, "portuguese_Brazil.1252");
     setlocale(LC_ALL, "pt-BR.UTF8");
-    printf("Soma de 1 até... %d\n", soma(10));
+    printf("5! = %lld\n", fatorial(5));
 
    
    
