@@ -9,17 +9,20 @@ int main(){
 
     setlocale(LC_ALL, "portuguese_Brazil.1252");
     setlocale(LC_ALL, "pt-BR.UTF8");
-    
-    int n;
-    printf("Digite N: ");
-    scanf("%d", &n);
 
-    for(int i = 1; i <= n; i++){
-        for(int j = 1; j <= n; j++){
-            printf("* ");
+    int total = 0;
+    for(int i = 1; i <= 100; i++){
+       
+        if(i % 10 == 7){
+        printf("%d\n", i);
+        total++;
+
         }
-        printf("\n");
+
     }
+    printf("\nTotal: %d\n", total);
+    
+    
 
 
 
