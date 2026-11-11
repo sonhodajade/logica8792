@@ -10,18 +10,14 @@ int main(){
     setlocale(LC_ALL, "portuguese_Brazil.1252");
     setlocale(LC_ALL, "pt-BR.UTF8");
 
-    int total = 0;
-    for(int i = 1; i <= 100; i++){
-       
-        if(i % 10 == 7){
-        printf("%d\n", i);
-        total++;
-
+    int soma = 0;
+    for(int i = 1; i <= 50; i++){
+        if(i % 2 == 1){
+            
+            soma += i;
         }
-
     }
-    printf("\nTotal: %d\n", total);
-    
+    printf("A soma dos ímpares é: %d\n", soma);
     
 
 
