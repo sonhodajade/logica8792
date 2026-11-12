@@ -12,20 +12,14 @@ int main(){
 
     
 
-    for(int i = 10; i <= 99; i++){
-        int dezena = i / 10;
-        int unidade = i % 10;
-
-        if(dezena == unidade){
+    for(int i = 0; i <= 200; i++){
+        if(i % 10 == 3){
             printf("%d\n", i);
+            int n; 
+            n++;
         }
-        
-        
     }
-    printf("\n");
-    
-    
-
+    printf("%d\n");
 
 
    
