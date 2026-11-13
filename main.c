@@ -12,21 +12,26 @@ int main(){
 
     
 
-   int total = 0;
-   for(int i = 10; i <= 99; i++){
-    int dezena = i / 10;
+//    unidade = ao dobro da dezena
+
+int total = 0;
+
+for(int i = 100; i <= 999; i++){
+    
+    int centena = i / 100;
     int unidade = i % 10;
-    if(unidade > dezena){
+
+    if(centena == unidade){
         total++;
-
     }
-   }
-   printf("Números com unidade maior que a dezena: %d\n", total);
 
-   
+}
+printf("Palídromo de 3 dígitos: %d\n", total);
 
 
-     return 0;
+
+
+    return 0;
 
 }
 
