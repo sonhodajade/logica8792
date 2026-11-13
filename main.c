@@ -11,27 +11,18 @@ int main(){
     setlocale(LC_ALL, "pt-BR.UTF8");
 
     
+// terminam em 7 e são múltiplos de três 1 a 500
 
-char palavra[50];
+int total = 0;
 
-int tamanho;
-int palídromo = 1;
-
-printf("Digite uma palavra: ");
-scanf("%49s", palavra);
-
-tamanho = strlen(palavra);
-
-for(int i = 0; i < tamanho / 2; i++){
-    if(palavra[i] != palavra[tamanho - 1 - i]){
-        palídromo = 0;
+for(int i = 1; i <= 500; i++){
+    if(i % 10 == 7 && i % 3 == 0){
+        printf("%d\n", i);
+        total++;
     }
+
 }
-if(palídromo == 1){
-    printf("A palavra é um palindromo!\n");
-}else{
-    printf("A palavra não é um palíndromo!\n");
-}
+printf("\nTotal: %d\n", total);
 
 
 
