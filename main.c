@@ -12,15 +12,16 @@ int main(){
 
     
 
-    for(int i = 0; i <= 200; i++){
-        if(i % 10 == 3){
-            printf("%d\n", i);
-            int n; 
-            n++;
-        }
-    }
-    printf("%d\n");
+   int total = 0;
+   for(int i = 10; i <= 99; i++){
+    int dezena = i / 10;
+    int unidade = i % 10;
+    if(unidade > dezena){
+        total++;
 
+    }
+   }
+   printf("Números com unidade maior que a dezena: %d\n", total);
 
    
 
