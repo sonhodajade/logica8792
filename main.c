@@ -12,22 +12,26 @@ int main(){
 
     
 
-//    unidade = ao dobro da dezena
+char palavra[50];
 
-int total = 0;
+int tamanho;
+int palídromo = 1;
 
-for(int i = 100; i <= 999; i++){
-    
-    int centena = i / 100;
-    int unidade = i % 10;
+printf("Digite uma palavra: ");
+scanf("%49s", palavra);
 
-    if(centena == unidade){
-        total++;
+tamanho = strlen(palavra);
+
+for(int i = 0; i < tamanho / 2; i++){
+    if(palavra[i] != palavra[tamanho - 1 - i]){
+        palídromo = 0;
     }
-
 }
-printf("Palídromo de 3 dígitos: %d\n", total);
-
+if(palídromo == 1){
+    printf("A palavra é um palindromo!\n");
+}else{
+    printf("A palavra não é um palíndromo!\n");
+}
 
 
 
